@@ -1,0 +1,24 @@
+
+  /*All things relevant to the postWall*/
+  .visiblePost{
+    height:100px;
+    width:500px;
+    padding: '10px';
+    resize: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #ffffff;
+    border: 1px solid transparent;
+    background-color:#ffff;
+    color:black;
+    margin:10px;
+
+  }
+
+  #postEmail{
+    font-size: large;
+    color:black;
+  }
+  #postText{
+    font-size: medium;
+    color:black;
+  }

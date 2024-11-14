@@ -1,0 +1,29 @@
+
+  /*All things relevant to the postWall*/
+  .visiblePost{
+    height:auto;
+    width:500px;
+    padding: 10px;
+    resize: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #ab8e8e;
+    border: 1px solid transparent;
+    background-color:#ffff;
+    color:black;
+    margin:10px;
+
+  }
+
+  #reviewEmail{
+    font-size: large;
+    color:black;
+  }
+  #reviewText{
+    font-size: large;
+    color:black;
+  }
+
+  #reviewRating{
+    font-size:medium;
+    color:rgb(205, 106, 19)
+  }

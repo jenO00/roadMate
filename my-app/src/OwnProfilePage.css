@@ -1,0 +1,226 @@
+/* css for profile-page. Unsure if I can use all in one file or if this is fine. Feels better though.*/
+
+.profile-page-container {
+    display: grid;
+    color: #333;
+    grid-template-columns: 400px 1fr; /* 400px for the left column, 1fr for the rest */
+    grid-template-rows: auto auto 1fr;
+    height: 100vh; 
+    
+  }
+  
+  .profile-page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+/*Everything related to header area below here! */
+
+  #profile-header{
+    grid-column: span 1;
+    grid-row:span 1;
+  }
+
+  #image_container, #profile-image_container{
+    display: inline-block; 
+  }
+
+  #logo-and-links {
+    margin-left: auto; 
+  }
+  
+  #roam-logo{
+    width: 100px;
+    height: auto;
+    margin-left: 20px; 
+    margin-top:2px;
+  }
+
+
+  .profile-link, .reviews-link, .settings-link, .discover-link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 80px; 
+    margin-right: 10px; 
+  }
+  
+  .profile-link:hover, .reviews-link:hover, .settings-link:hover, .discover-link:hover{
+    text-decoration: underline;
+  }
+  
+  /*All relevant for the orange about-part of the page below*/
+  #profile-about{
+    grid-column:span 1;
+    grid-row: span 1;
+    display:grid;
+    place-items:center;
+  }
+
+  .profile-label{
+    display:inline-block;
+  };
+
+  #user-name-div{
+    display: center;
+  }
+
+  #user-name-label{
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right:5px;
+    
+  }
+  #user-lastname-label{
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+
+
+  #pencil-edit-icon{
+    width: 40px;
+    height: auto;
+    margin-left: 20px; 
+    margin-top:2px;
+    cursor:pointer;
+  }
+
+  #saveEditButton{
+    display:none;
+    background-color: #ECECEC;
+    margin-top:5px;
+    width:50px;
+    height:30px;
+    border-radius:15px;
+    font-size:medium;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+    
+  }
+
+  #editableText{
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto;
+  }
+
+ 
+
+  /*All relevant to textbox for posting below*/
+
+  .post-textbox-container{
+   grid-row: span 2;
+   display:grid;
+   place-items: center;
+   background-color: #ECECEC;
+  }
+
+  #post-textbox{
+    height:100px;
+    width:500px;
+    padding: '10px';
+    resize: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #ffffff;
+    border: 1px solid transparent;
+    font-size: medium;
+    margin-top:50px;
+    
+    }
+
+  textarea {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+  }
+  textarea::placeholder {
+    font-size: 20px; 
+    color: #999; 
+  }
+
+  #char-and-button{
+    width:500px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+  }
+
+  #post-message-button{
+    background-color: #FDCE88;
+    margin-top:5px;
+    width:90px;
+    height:40px;
+    border-radius:15px;
+    font-size:large;
+    font-weight:bold;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+  }
+
+  #post-message-button:hover{
+    background-color: #dcac65;
+    box-shadow: 0px 15px 20px #FDCE88;
+    color: #000000;
+    transform: translateY(-2px);
+  }
+
+  /*All related to postwall container*/
+
+  .post-wall-container{
+    grid-row: span 2;
+    display: grid;
+    place-items: center;
+    /*background-color:aqua;*/
+  }
+
+  /*All things related to the GRIDS!!*/
+
+  #gridHeader{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #ECECEC;
+  }
+
+  #gridProfileAbout{
+    grid-column:1;
+    grid-row:1/4;
+    background-color: #FDCE88;
+
+  }
+
+  #gridTextBox{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #ECECEC;
+    justify-content: center;
+    place-items: center; 
+  }
+
+  #gridPostWall{
+    grid-column:2;
+    grid-row: 3/4;
+    background-color: #ECECEC;
+  }
+
+  #sign-out-button{
+      background-color: #ffff;
+      margin-top:5px;
+      width:90px;
+      height:40px;
+      border-radius:15px;
+      font-size:medium;
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      cursor:pointer;
+  }
+
+  #sign-out-button:hover{
+    background-color: #609fe2ac; /*Color when hover over the button */
+  }

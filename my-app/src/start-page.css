@@ -1,0 +1,49 @@
+/* StartPage.css */
+.startPage {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .startPageContent {
+    background-color: rgba(66, 66, 66, 0.5);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 120px;
+  }
+
+  
+  .startPageContent input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+  }
+  
+  .signIn, .signUp {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor:pointer;
+    border: none;
+    margin-top: 10px;
+    transition: all 0.3s ease 0s;
+  }
+  
+
+  
+  .forgotPassword, .account {
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #d5f0ff;
+    border: none;
+    margin-top: 10px;
+  }
+  

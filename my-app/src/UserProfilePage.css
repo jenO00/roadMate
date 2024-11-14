@@ -1,0 +1,88 @@
+/* css for profile-page. Unsure if I can use all in one file or if this is fine. Feels better though.*/
+
+.user-profile-page-container {
+    display:grid;
+    color: #333;
+    background-color: #ECECEC;
+    grid-template-columns: 400px 1fr; /* 400px for the left column, 1fr for the rest */
+    grid-template-rows: auto auto 1fr; /* First two rows for the header and the rest for content */
+    height: 100vh; 
+
+  }
+  
+  .user-profile-page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+/*Everything related to header area below here! */
+
+  #user-profile-header{
+    grid-column: span 1;
+  }
+
+  #user-image_container{
+    display: inline-block; 
+  }
+
+  #logo-and-links {
+    margin-left: auto; 
+  }
+  
+  #roam-logo{
+    width: 100px;
+    height: auto;
+    margin-left: 20px; 
+    margin-top:2px;
+  }
+
+
+  .profile-link, .reviews-link, .settings-link, .discover-link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 80px; 
+    margin-right: 10px; 
+  }
+  
+  .profile-link:hover, .reviews-link:hover, .settings-link:hover, .discover-link:hover{
+    text-decoration: underline;
+  }
+  
+  /*All relevant for the orange about-part of the page below*/
+  #user-profile-about{
+    grid-row: span 4;
+  /*z=1 is the axis that makes sure it is above the header!! not distrubed by it*/
+  }
+
+
+  /*All related to postwall container*/
+
+  .user-post-wall-container{
+    grid-row: span 2;
+    grid-column: span 1;
+    /*background-color:aqua;*/
+  }
+
+  /*Grid items*/
+
+  #grid1{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #ECECEC;
+  }
+
+
+  #grid2{
+    grid-column:1;
+    grid-row:1/4;
+    background-color:#FDCE88;
+  
+  }
+
+
+  #grid3{
+    grid-column:2;
+    grid-row:2/4;
+    background-color: #ECECEC;
+  }
