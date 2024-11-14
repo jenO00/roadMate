@@ -11,4 +11,6 @@ At the moment, the code has passed the course, but I intend to add the features 
 - Chat. 
 - Nicer design on reviews. 
 - Profile pictures. 
-- Possibility to upload pictures. 
+- Possibility to upload pictures.
+
+See figma file for further design choices.
